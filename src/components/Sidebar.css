@@ -1,0 +1,153 @@
+/* Sidebar container styling */
+.sidebar-container {
+  display: flex;
+  width: 5rem;
+  height: 100%;
+  padding: 1.25rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-right: 1px solid #EBECF2;
+  background: #F7F8FA;
+}
+
+/* Container for menu and bottom icons */
+.menu-icons-container,
+.bottom-menu-icons-container {
+  margin-bottom: 7rem;
+}
+
+/* Styling for ul in sidebar container */
+.sidebar-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  padding-top: 10px;
+}
+
+/* Styling for li in sidebar container */
+.sidebar-container ul li {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+/* Styling for main menu li in sidebar container */
+.sidebar-container #mainMenu li {
+  margin: 0.2rem 0;
+}
+
+/* Styling for middle menu container */
+.middle-menu {
+  display: flex;
+  padding: 0 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6.25rem;
+  background: #FFF;
+  height: auto;
+}
+
+/* Styling the Border Radius */
+.middleMenu .icon7 {
+  display: flex;
+  width: 1.875rem;
+  height: 1.876rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.58594rem;
+  border-radius: 50%;
+  background: #34CAA5;
+}
+
+/* Styling for active state of middle menu icon7 */
+.middleMenu .icon7.active {
+  background: #34caa5;
+}
+
+/* Styling for bottom menu container */
+.bottomMenu {
+  margin: 15rem 0;
+}
+
+/* Light mode styles for active icon7 */
+.light-mode .icon7.active {
+  background: #34caa5;
+}
+
+/* Dark mode styles */
+.dark-mode .sidebar-container {
+  background-color: #2c3e50;
+  color: #FFFFFF;
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles for middle menu */
+.dark-mode .middle-menu {
+  background: #2c3e50;
+}
+
+/* Dark mode styles for active icon7 */
+.dark-mode .icon7.active {
+  background: #34caa5;
+}
+
+/* Styling for icon */
+.icon {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styling for pseudo-element after in sidebar container */
+.sidebar-container ul li a::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: -26px;
+  width: 0.1875rem;
+  height: 1.3125rem;
+  background: #0D062D;
+  border-radius: 5px 0px 0px 5px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+/* Styling for pseudo-element after on hover in sidebar container */
+.sidebar-container ul li:hover a::after {
+  width: 0.1875rem;
+  opacity: 1;
+}
+
+/* Styling for active state pseudo-element after in sidebar container */
+.sidebar-container ul li.active a::after {
+  width: 0.1875rem;
+}
+
+/* Styling for icon7 and icon8 pseudo-element after */
+.icon7 a::after,
+.icon8 a::after {
+  display: none;
+}
+
+/* Styling for active state of li in sidebar container */
+.sidebar-container ul li.active a {
+  color: #0D062D;
+}
+
+/* Styling for hover state of li in sidebar container */
+.sidebar-container ul li:hover a {
+  color: #0D062D;
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width:525px) {
+  .sidebar-container {
+    min-width: 68px;
+    width: 68px;
+  }
+}
